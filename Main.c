@@ -2,9 +2,19 @@
 
 int main()
 {
-    printf("Meu nome é Victor Camilo.\n");
-    printf("Estou aprendendo programação em C\n");
-    printf("Esse é meu primeiro programa!\n");
+    char nome [50];
+    int idade;
 
-    return 0;
+    printf("Qual o seu nome?\n");
+    scanf("%49s" , nome);
+
+    printf("Qual a sua Idade?\n");
+    scanf("%d", &idade);
+
+    printf("\nOlá %s!\n", nome);
+    printf("Voce tem %d anos.\n", idade);
+
+
+return 0;
+
 }
