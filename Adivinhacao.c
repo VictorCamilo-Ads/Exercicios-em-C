@@ -17,8 +17,14 @@ printf("Seu chute foi: %d\n", chute);
 if (chute == numerosecreto) {
     printf("Parabens! Voce acertou!\n");
     printf("Voce é um verdadeiro mestre da adivinhação!, jogue novamente!\n");
+    
 } else {
-    printf("Voce errou! mas não desanime, tente novamente!\n");
+    if(chute > numerosecreto) {
+        printf("Seu chute foi maior que o numero secreto!\n");
+    }
+    if(chute < numerosecreto) {
+        printf("Seu chute foi menor que o numero secreto!\n");
+    }       
 }
 
 
