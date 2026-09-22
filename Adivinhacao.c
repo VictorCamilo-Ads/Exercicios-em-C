@@ -1,9 +1,9 @@
 #include <stdio.h>
 
-#define NUMERO_DE_TENTATIVAS 5
 
 int main(){
 
+    //imprime cabecalho do jogo
     printf("******************************************\n");
     printf("* BEM VINDO AO NOSSO JOGO DE ADIVINHACAO *\n");
     printf("******************************************\n");
@@ -12,26 +12,23 @@ int numerosecreto = 42;
 
 int chute;
 
+int tentativas = 0;
 
-for (int i = 1; i <= NUMERO_DE_TENTATIVAS; i++){
+while (1) {
 
-    printf("Tentativa %d de %d\n", i, NUMERO_DE_TENTATIVAS);
-
+    printf("Tentativa %d\n", tentativas + 1); 
     printf("Digite o seu chute: \n");
     scanf("%d", &chute);        
     printf("Seu chute foi: %d\n", chute);
 
     if (chute < 0) {
         printf("Voce nao pode chutar numeros negativos!\n");
-        i--;
-        
+
         continue;
     }
 
     int acertou = (chute==numerosecreto);
     int maior = (chute>numerosecreto);
-    int menor = (chute<numerosecreto);
-
 
 
     if (acertou) {
@@ -50,8 +47,11 @@ for (int i = 1; i <= NUMERO_DE_TENTATIVAS; i++){
     else {
             printf("Seu chute foi menor que o numero secreto!\n");
     }       
+
+    tentativas++;
     
 }
     printf("Fim de jogo!\n");
+    printf("Voce acertou em %d tentativas!\n", tentativas + 1);
 
 }
