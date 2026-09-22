@@ -10,29 +10,33 @@ int numerosecreto = 42;
 
 int chute;
 
-printf("Digite o seu chute: \n");
-scanf("%d", &chute);        
-printf("Seu chute foi: %d\n", chute);
+for (int i = 1; i<=3; i++){
 
-int acertou = (chute==numerosecreto);
+    printf("Tentativa %d de 3\n", i);
 
-if (acertou) {
-    printf("Parabens! Voce acertou!\n");
-    printf("Voce é um verdadeiro mestre da adivinhação!, jogue novamente!\n");    
+    printf("Digite o seu chute: \n");
+    scanf("%d", &chute);        
+    printf("Seu chute foi: %d\n", chute);
 
-}
+    int acertou = (chute==numerosecreto);
 
-else {
-    int maior = (chute>numerosecreto);
+    if (acertou) {
+        printf("Parabens! Voce acertou!\n");
+        printf("Voce é um verdadeiro mestre da adivinhação!, jogue novamente!\n");    
 
-    if(maior) {
-        printf("Seu chute foi maior que o numero secreto!\n");
     }
+
     else {
-        printf("Seu chute foi menor que o numero secreto!\n");
-    }       
+        int maior = (chute>numerosecreto);
+
+        if(maior) {
+            printf("Seu chute foi maior que o numero secreto!\n");
+        }
+        else {
+            printf("Seu chute foi menor que o numero secreto!\n");
+        }       
+    }
 }
-
-
+    printf("Fim de jogo!\n");
 
 }
