@@ -22,7 +22,9 @@ for (int i = 1; i<=3; i++){
 
     if (acertou) {
         printf("Parabens! Voce acertou!\n");
-        printf("Voce é um verdadeiro mestre da adivinhação!, jogue novamente!\n");    
+        printf("Voce é um verdadeiro mestre da adivinhação!, jogue novamente!\n");  
+        
+        break;
 
     }
 
