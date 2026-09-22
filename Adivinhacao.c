@@ -12,11 +12,11 @@ int numerosecreto = 42;
 
 int chute;
 
-int tentativas = 0;
+int tentativas = 1;
 
 while (1) {
 
-    printf("Tentativa %d\n", tentativas + 1); 
+    printf("Tentativa %d\n", tentativas); 
     printf("Digite o seu chute: \n");
     scanf("%d", &chute);        
     printf("Seu chute foi: %d\n", chute);
@@ -52,6 +52,6 @@ while (1) {
     
 }
     printf("Fim de jogo!\n");
-    printf("Voce acertou em %d tentativas!\n", tentativas + 1);
+    printf("Voce acertou em %d tentativas!\n", tentativas);
 
 }
