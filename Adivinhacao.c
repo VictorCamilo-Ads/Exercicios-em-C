@@ -6,9 +6,14 @@
 int main(){
 
     //imprime cabecalho do jogo
-    printf("******************************************\n");
-    printf("* BEM VINDO AO NOSSO JOGO DE ADIVINHACAO *\n");
-    printf("******************************************\n");
+printf("          P  /_\\  P                                 \n");
+printf("         /_\\_|_|_/_\\                               \n");
+printf("     n_n | ||. .|| | n_n         Bem vindo ao        \n");
+printf("     |_|_|nnnn nnnn|_|_|     Jogo de Adivinhacao!    \n");
+printf("    |" "  |  |_|  |"  " |                            \n");
+printf("    |_____| ' _ ' |_____|                            \n");
+printf("          \\__|_|__/                                 \n");
+printf("\n\n");
 
 
 int segundos = time(0);
