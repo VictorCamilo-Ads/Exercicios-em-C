@@ -16,18 +16,21 @@ int main(){
         printf("\n\n");
 
 
-int segundos = time(0);
-srand(segundos);
 
-int numerogrande = rand();
 
-int numerosecreto = numerogrande % 100;
+int segundos = time(0); //pega o tempo atual do sistema
+srand(segundos); //semente para gerar numeros aleatorios
+
+int numerogrande = rand(); //gera numero aleatorio grande
+
+int numerosecreto = numerogrande % 100; //gera numero aleatorio entre 0 e 99
 int chute; 
 int tentativas = 1; 
 double pontos = 1000;
 
 int acertou = 0;
 
+ // imprime o nivel de dificuldade e define o numero de tentativas baseado na escolha do usuario 
 int nivel;
 printf("Qual nivel de dificuldade?\n");
 printf("(1) Facil (2) Medio (3) Dificil\n\n");
@@ -37,6 +40,7 @@ scanf("%d", &nivel);
 
 int numerodetentativas = 5;
 
+//switch case para definir o numero de tentativas baseado no nivel escolhido
 switch (nivel)
 {
 case 1:
@@ -50,7 +54,7 @@ default:
     break;
 }
 
-
+//loop para o usuario chutar o numero secreto
 for(int i = 1; i <= numerodetentativas; i++){
 
     printf("Tentativa %d\n", tentativas); 
@@ -81,12 +85,13 @@ for(int i = 1; i <= numerodetentativas; i++){
     }       
 
     tentativas++;
-
+    
+    //calcula a pontuacao do jogador baseado na diferenca entre o chute e o numero secreto
     double pontosperdidos = abs(chute - numerosecreto) / (double)2;
     pontos = pontos - pontosperdidos; 
 
 }
-
+    //imprime o resultado do jogo
     printf("Fim de jogo!\n");
 
     if(acertou) {
