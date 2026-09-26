@@ -239,7 +239,10 @@ Pretendo utilizar projetos como este para acompanhar minha evolução e colocar 
 
 Estudante de **Análise e Desenvolvimento de Sistemas**, atualmente desenvolvendo conhecimentos em programação, C, Git, GitHub, análise de dados e desenvolvimento de software.
 
-Optei por gastar tempo em aprendizagem em linguagem C , sendo uma linguagem que já é antiga e pouco utilizada, mas que vai me trazer uma base bem solida em Logica de programação, Sintaxe e algoritmos. Com isso, ficará mais "fácil" aprendizagem de outras linguagens de programação 
+Optei por gastar tempo em aprendizagem em linguagem C , sendo uma linguagem que já é antiga e pouco utilizada, mas que vai me trazer uma base bem solida em Logica de programação, Sintaxe e algoritmos. Com isso, ficará mais "fácil" aprendizagem de outras linguagens de programação.
+
+Meu objetivo não é ser dependente da Inteligência Artificial, mas entender a logica e a estrutura para junto com a tecnologia da IA, formar projetos solidos e estruturas boas para um software, voltado para Backend. 
+
 ---
 
 ⭐ Projeto desenvolvido para estudos e prática de programação.
